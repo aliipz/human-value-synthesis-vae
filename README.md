@@ -32,7 +32,7 @@ We propose a Variational Autoencoder (VAE) framework for the dynamic synthesis o
 
 This project uses the **European Social Survey Round 11** (ESS11). The dataset requires free registration and can be downloaded from:
 
-👉 [https://www.europeansocialsurvey.org/data/download.html?r=11](https://www.europeansocialsurvey.org/data/download.html?r=11)
+👉 [https://ess.sikt.no/en/series/321b06ad-1b98-4b7d-93ad-ca8a24e8788a](https://ess.sikt.no/en/series/321b06ad-1b98-4b7d-93ad-ca8a24e8788a)
 
 See `data/README_data.md` for detailed download and setup instructions.
 
