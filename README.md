@@ -28,31 +28,25 @@ We propose a Variational Autoencoder (VAE) framework for the dynamic synthesis o
 | Pearson correlation similarity | 0.974 |
 | TSTR utility retention | 95.8% |
 
-## Installation
-
-```bash
-git clone https://github.com/aliipz/human-value-synthesis-vae.git
-cd human-value-synthesis-vae
-pip install -r requirements.txt
-```
-
 ## Data
 
 This project uses the **European Social Survey Round 11** (ESS11). The dataset requires free registration and can be downloaded from:
 
 👉 [https://www.europeansocialsurvey.org/data/download.html?r=11](https://www.europeansocialsurvey.org/data/download.html?r=11)
 
-Once downloaded, place the file `ESS11e04_1-subset.csv` in the `data/` folder before running the notebook.
+See `data/README_data.md` for detailed download and setup instructions.
 
 ## Usage
 
 ### Google Colab (recommended)
 
-Click the badge at the top to open the notebook directly in Colab. Upload the ESS dataset to your Colab session before running.
+Click the badge at the top to open the notebook directly in Colab. All required libraries are pre-installed in the Colab environment. Upload the ESS dataset to your session before running.
 
 ### Local
 
-Open and run `notebook/VAE_human_values.ipynb`. The notebook auto-detects the environment and sets paths accordingly. It is structured as follows:
+Open and run `VAE_human_values.ipynb`. The notebook auto-detects the environment and sets paths accordingly. All standard scientific Python libraries are required (torch, numpy, pandas, scikit-learn, scipy, matplotlib, seaborn).
+
+The notebook is structured as follows:
 
 1. **Data loading and preprocessing** — PVQ-21 aggregation, ipsatization, standard scaling
 2. **VAE architecture and training** — β-annealing strategy, latent bottleneck k=5
@@ -67,7 +61,6 @@ Open and run `notebook/VAE_human_values.ipynb`. The notebook auto-detects the en
 ├── VAE_human_values.ipynb       # Main notebook (Colab-compatible)
 ├── data/
 │   └── README_data.md           # Instructions to download ESS data
-├── requirements.txt
 └── README.md
 ```
 
